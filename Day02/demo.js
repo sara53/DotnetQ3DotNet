@@ -190,3 +190,89 @@ console.log("======================");
 // // sayHello("flower");
 // // console.log("--------------");
 // sayHello(test);
+/***
+ *length
+ ------------------------------------
+ * push --> 
+ * pop 
+ * shift
+ * unshift
+ * concat
+ * join
+ * reverse
+ * sort
+ */
+// var arr = ["mona", "ali", "ahmed"];
+
+// arr.sort(/** callback function */);
+// arr.reverse();
+// var result = arr.concat([1, 2, 3]);
+
+// console.log(result);
+// arr.shift();
+// arr.shift();
+// arr.pop();
+
+// arr.unshift("ahmed");
+// arr.unshift(true);
+// arr.push(true);
+// arr.push(123);
+
+// console.log(arr);
+
+// for (var i = 0; i < arr.length; i++) {
+// 	console.log(arr[i]);
+// }
+// // set
+// arr[0] = "ahmed";
+// //
+// console.log(arr);
+
+/**-----------
+ * length
+ * ---------------------
+ * ==charAt
+ * == indexOf
+ * == lastIndexOf
+ * == trim
+ * == trimStart
+ * == trimEnd
+ * == split
+ * == includes
+ * == startsWith
+ * == endWith
+ *
+ * --------- */
+// var text = "hello FROm iti";
+// var result = text.startsWith("h");
+// var result = text.split("").reverse().join("");
+// var result = text.split("FROm");
+// var result = text.trimEnd() + "welcome";
+// var result = text.toLowerCase();
+// var result = text.toUpperCase();
+
+// var result = text.lastIndexOf("l");
+// var result = text.charAt();
+// console.log(result);
+// for (var i = 0; i < text.length; i++) {
+// 	console.log(text[i]);
+// }
+/** ============
+ * PI
+ * ------------------------
+ * == round
+ * == floor
+ * == ceil
+ * == random
+ * == round
+ * == max
+ * ==sqrt
+ * == pow
+ * == abs
+ * -- sign --> positive --> 1
+ * -- sign --> negative --> -1
+ * -- sign --> 0 --> 0
+ * -- sin -- cose ..
+ * ================== */
+
+// console.log(Math.sin((90 * Math.PI) / 180));
