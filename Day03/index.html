@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<nav class="navbar">
+			<a>Home</a>
+			<a href="#about">About</a>
+			<a href="#contact">Contact</a>
+		</nav>
+
+		<div class="parentDiv" id="parentDiv">
+			<h2>Slider Section</h2>
+			<p class="content myP" id="first">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+				delectus, excepturi asperiores voluptas consequuntur repudiandae nihil
+				cupiditate nemo tempora eum odio repellendus blanditiis, quia quis illo
+				distinctio exercitationem iure ducimus!
+			</p>
+
+			<button id="btn" onclick="changeStyle()">Show More</button>
+		</div>
+
+		<div class="form">
+			<input
+				name="username"
+				type="text"
+				placeholder="Enter Your Name"
+				value=""
+				oninput="showAnswer()"
+			/>
+
+			<!-- <p id="output"></p> -->
+
+			<label>
+				Football
+				<input type="checkbox" value="football" name="choose" />
+			</label>
+			<label>
+				Tennis
+				<input type="checkbox" value="Tennis" name="choose" />
+			</label>
+			<label>
+				Swimming
+				<input type="checkbox" value="Swimming" name="choose" />
+			</label>
+			<button onclick="showAnswer()">Send Data</button>
+		</div>
+		<script src="./demo.js"></script>
+	</body>
+</html>
