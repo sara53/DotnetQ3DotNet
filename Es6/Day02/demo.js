@@ -140,45 +140,45 @@
  *
  *  */
 
-function getAllProducts() {
-	var myPromise = new Promise(function (x, y) {
-		var productsIds;
-		setTimeout(() => {
-			productsIds = [100, 200, 300];
-			if (productsIds) {
-				x(productsIds);
-			} else {
-				y("Error on getting products List ids");
-			}
-		}, 2000);
-	});
+// function getAllProducts() {
+// 	var myPromise = new Promise(function (x, y) {
+// 		var productsIds;
+// 		setTimeout(() => {
+// 			productsIds = [100, 200, 300];
+// 			if (productsIds) {
+// 				x(productsIds);
+// 			} else {
+// 				y("Error on getting products List ids");
+// 			}
+// 		}, 2000);
+// 	});
 
-	return myPromise;
-}
+// 	return myPromise;
+// }
 
-function getProductDetails(productId) {
-	var myPromise = new Promise(function (resolve, reject) {
-		var product;
-		setTimeout(() => {
-			product = {
-				id: productId,
-				name: "Book",
-				price: 300,
-			};
+// function getProductDetails(productId) {
+// 	var myPromise = new Promise(function (resolve, reject) {
+// 		var product;
+// 		setTimeout(() => {
+// 			product = {
+// 				id: productId,
+// 				name: "Book",
+// 				price: 300,
+// 			};
 
-			product ? resolve(product) : reject("Error on getting product details");
-		}, 1000);
-	});
+// 			product ? resolve(product) : reject("Error on getting product details");
+// 		}, 1000);
+// 	});
 
-	return myPromise;
-}
+// 	return myPromise;
+// }
 
-function getPrice(product) {
-	return new Promise((resolve, reject) => {
-		var price = product.price;
-		price ? resolve(price) : reject("Error on getting price");
-	});
-}
+// function getPrice(product) {
+// 	return new Promise((resolve, reject) => {
+// 		var price = product.price;
+// 		price ? resolve(price) : reject("Error on getting price");
+// 	});
+// }
 
 // async function execute() {
 // 	try {
@@ -226,4 +226,17 @@ function getPrice(product) {
 // 	}
 // }
 
-// fetchData();
+// import * as all from "./main.js";
+
+// function mult() {
+// 	all.add(5, 8);
+// 	all.square();
+// 	all.default();
+// 	console.log("er");
+// }
+
+// mult();
+
+/** export naming
+ * export default
+ */
