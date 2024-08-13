@@ -1,0 +1,15 @@
+1- install nodejs
+2- npm i -g typescript
+(tsc -v) (node -v)
+
+
+
+3- tsc filename.ts -w
+
+
+setup configuration file
+4- tsc --init
+	-- rootDir
+	-- outDir
+5- tsc -w
+
