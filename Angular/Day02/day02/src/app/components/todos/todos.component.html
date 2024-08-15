@@ -1,0 +1,66 @@
+<!-- <div class="container mt-5 bg-dark p-5">
+  <div class="row">
+    <div class="col-sm-8">
+      <input
+        type="text"
+        name="todoName"
+        [(ngModel)]="todoValue"
+        class="form-control"
+        placeholder="Enter Your Couse"
+      />
+    </div>
+    <div class="col-sm-4">
+      <button class="btn btn-primary" (click)="addTodo()">+</button>
+    </div>
+  </div>
+  @for (todo of todosList; track $index) {
+  <div class="row mt-4">
+    <div class="col-sm-8">
+      <p class="bg-light p-1 rounded">{{ todo }}</p>
+    </div>
+    <div class="col-sm-4">
+      <button class="btn btn-danger" (click)="removeTodo($index)">-</button>
+    </div>
+  </div>
+  }
+</div> -->
+
+<div class="container mt-5">
+  <!-- <p class="bg-light p-3 rounded" [style.color]="flag ? 'red' : 'green'">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe impedit
+    distinctio unde a? Accusantium cupiditate recusandae voluptas sit,
+    reprehenderit magnam id beatae facilis, impedit laboriosam in odit quaerat
+    doloribus deleniti?
+  </p> -->
+  <!-- <p
+    class="p-3 rounded"
+    [ngStyle]="{
+      color: flag ? 'red' : 'green',
+      backgroundColor: flag ? '#000' : '#ddd'
+    }"
+  >
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe impedit
+    distinctio unde a? Accusantium cupiditate recusandae voluptas sit,
+    reprehenderit magnam id beatae facilis, impedit laboriosam in odit quaerat
+    doloribus deleniti?
+  </p> -->
+  <!-- <p class="p-3 rounded" [class.successClass]="flag">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe impedit
+    distinctio unde a? Accusantium cupiditate recusandae voluptas sit,
+    reprehenderit magnam id beatae facilis, impedit laboriosam in odit quaerat
+    doloribus deleniti?
+  </p> -->
+  <p
+    class="p-3 rounded"
+    [ngClass]="{
+      'bg-danger p-5': flag,
+      'bg-success': !flag
+    }"
+  >
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe impedit
+    distinctio unde a? Accusantium cupiditate recusandae voluptas sit,
+    reprehenderit magnam id beatae facilis, impedit laboriosam in odit quaerat
+    doloribus deleniti?
+  </p>
+  <button (click)="toggle()" class="btn btn-dark">toggle</button>
+</div>

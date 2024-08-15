@@ -1,0 +1,19 @@
+== Component Communication  
+    - one Way Binding
+        -- interpolation
+        -- attribute Binding
+    - Two Way Binding
+        - normal Way
+        - FormsModule
+
+== Event Binding
+
+== Directives
+    -- Structural Directives
+        -- *ngIf -- *ngFor * ngSwitch
+            -- (control flow @for @if )
+    
+    -- attribute Directives
+        -- ngClass -- ngStyle [style.propName] [class.className]
+
+    -- component Directives

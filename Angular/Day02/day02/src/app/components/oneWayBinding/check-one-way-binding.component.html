@@ -1,0 +1,12 @@
+<div class="bg-light p-5">
+  <div class="container">
+    <h1 class="text-center">One Way Binding</h1>
+
+    <img src="Images/{{ imgSrc1 }}" alt="" />
+    <img [src]="imgSrc2" alt="" />
+    <p class="mt-5 lead fs-2">Track Name :{{ trackName }}</p>
+    <p class="mt-5 lead fs-2">Inst Name :{{ flag ? "ali" : "ahmed" }}</p>
+
+    <button class="btn btn-dark" (click)="toggle()">Toggle</button>
+  </div>
+</div>

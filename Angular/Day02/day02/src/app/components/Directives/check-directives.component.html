@@ -1,0 +1,72 @@
+<!-- @for (x of itiTracks; track $index) {
+<div>
+  <div class="container mt-5">
+    <div class="item bg-light p-3 rounded m-2">
+      <h1>{{ x }} : {{ $even }} : {{ $odd }}</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+        expedita neque voluptas tempore hic, ab vel doloribus at earum mollitia
+        veritatis laborum officia esse temporibus ipsum culpa magnam tempora
+        deserunt?
+      </p>
+    </div>
+  </div>
+</div>
+}@empty {
+<h1 class="alert alert-danger">Not tracks Founded</h1>
+} -->
+
+<!-- <div *ngFor="let x of itiTracks; let i = index; let myOdd = odd">
+  <h1>{{ x }}</h1>
+  <p>{{ i }} : {{ myOdd }}</p>
+</div> -->
+<!-- 
+<div class="container p-5 mt-5">
+  <p *ngIf="flag; else myElseBlock" class="bg-light p-3 rounded">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolorem labore
+    perspiciatis! Eaque ipsum officia voluptate? Alias, quis? Aut impedit
+    debitis corporis voluptate animi similique enim architecto quaerat delectus!
+    Recusandae!
+  </p>
+
+  <ng-template #myElseBlock>
+    <p class="fs-1 bg-secondary p-3 rounded">Welcome Dotnet Track</p>
+  </ng-template>
+  <button (click)="toggle()" class="btn btn-dark">Toggle</button>
+</div> -->
+
+<!-- @if (flag) {
+<div class="container p-5 mt-5">
+  <p class="bg-light p-3 rounded">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolorem labore
+    perspiciatis! Eaque ipsum officia voluptate? Alias, quis? Aut impedit
+    debitis corporis voluptate animi similique enim architecto quaerat delectus!
+    Recusandae!
+  </p>
+</div>
+
+}@else{
+
+<p class="fs-1 bg-secondary p-3 rounded">Welcome Dotnet Track</p>
+}
+
+<button (click)="toggle()" class="btn btn-dark">Toggle</button> -->
+<div class="container">
+  @switch (color) { @case ('green') {
+  <div class="bg-success p-3 rounded m-3 text-light text-center">
+    Green Color
+  </div>
+  } @case ('blue') {
+  <div class="bg-primary p-3 rounded m-3 text-light text-center">
+    Blue Color
+  </div>
+  } @case ('yellow') {
+  <div class="bg-warning p-3 rounded m-3 text-light text-center">
+    Yellow Color
+  </div>
+  } @default {
+  <div class="bg-secondary p-3 rounded m-3 text-light text-center">
+    No Color
+  </div>
+  } }
+</div>
