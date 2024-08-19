@@ -1,0 +1,47 @@
+<div class="mt-5 container text-center">
+  <h1 class="mb-1 text-muted">Products</h1>
+  <div class="d-flex flex-start mb-3 align-items-center">
+    <i
+      class="bi bi-plus-square fs-1 text-success"
+      [routerLink]="['/products/0/edit']"
+    ></i>
+    <span class="mx-4"> add Product</span>
+  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Product Name</th>
+        <th scope="col">Price</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (product of products; track product.id) {
+
+      <tr>
+        <th scope="row">{{ product.id }}</th>
+        <td>{{ product.name | uppercase }}</td>
+        <td>{{ product.price | currency }}</td>
+        <td>{{ product.quantity }}</td>
+        <td>
+          <i
+            [routerLink]="['/products', product.id, 'edit']"
+            class="fs-4 mx-2 text-info bi bi-pencil-square"
+          ></i>
+          <i
+            class="fs-4 mx-2 text-warning bi bi-eye-fill"
+            [routerLink]="['/products', product.id]"
+          ></i>
+          <i
+            class="fs-4 mx-2 text-danger bi bi-trash3-fill"
+            (click)="deleteProductHandler(product.id)"
+          ></i>
+        </td>
+      </tr>
+
+      }
+    </tbody>
+  </table>
+</div>

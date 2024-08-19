@@ -1,0 +1,17 @@
+<div class="mt-5 bg-dark text-light p-5">
+  <div class="container">
+    <h1 class="text-warning text-center">Products Section</h1>
+    <button (click)="editFirstProduct()" class="btn btn-outline-primary my-4">
+      Edit First Product
+    </button>
+    <div class="row">
+      @for (product of products; track product.id) {
+      <app-product-card
+        (onRemoveProduct)="removeProduct($event)"
+        [product]="product"
+        class="col-sm-6 col-md-4"
+      />
+      }
+    </div>
+  </div>
+</div>

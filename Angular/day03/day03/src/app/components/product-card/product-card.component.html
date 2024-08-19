@@ -1,0 +1,24 @@
+<div class="card">
+  <div class="card-body">
+    <h3>
+      Product Name :
+      <strong class="text-muted"> {{ product?.name }} </strong>
+    </h3>
+    @if (previousProductName) {
+
+    <p>
+      Previous Product Name :
+      <strong class="text-muted"> {{ previousProductName?.name }} </strong>
+    </p>
+    }
+
+    <p class="lead">Price :{{ product?.price }}</p>
+    <p class="lead">Quantity :{{ product?.quantity }}</p>
+    <button
+      class="btn btn-outline-danger"
+      (click)="removeProductHandler(product?.id)"
+    >
+      Remove Product
+    </button>
+  </div>
+</div>
